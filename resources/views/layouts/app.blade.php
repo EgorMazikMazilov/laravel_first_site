@@ -52,7 +52,7 @@
 
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right">
-                    <!-- Authentication Links -->
+                    <!-- Authentication Links  left-->
 
                     @if (Auth::user())
                         <li class="dropdown">

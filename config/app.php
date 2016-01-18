@@ -158,8 +158,11 @@ return [
 
         //debug bar use only in dev
         Barryvdh\Debugbar\ServiceProvider::class,
-        // IDE helper
+        // IDE helper  use only in dev
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+
+        // FrozenNode/Laravel-Administrator - use in prod
+        'Frozennode\Administrator\AdministratorServiceProvider',
 
     ],
 

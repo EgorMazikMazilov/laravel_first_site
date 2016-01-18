@@ -23,13 +23,10 @@ class AuthController extends Controller
 
     use AuthenticatesAndRegistersUsers, ThrottlesLogins;
 
-    public function getRegister()
-    {
+    public function showRegistrationForm() {
         return redirect('login');
     }
-    public function postRegister(){
 
-    }
     /**
      * Where to redirect users after login / registration.
      *

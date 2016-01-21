@@ -36,4 +36,12 @@ return [
             ],
         ],
     ],
+    'filters' => [
+        'active' => [
+            'type' => 'bool',
+        ],
+        'title' => [
+            'type' => 'text',
+        ],
+    ],
 ];

@@ -20,7 +20,7 @@ class CreateMenusTable extends Migration {
             $table->string('title');
             $table->string('url');
             $table->string('position');
-            $table->timestamp('timestamp');
+            $table->timestamps();
         });
 
     }

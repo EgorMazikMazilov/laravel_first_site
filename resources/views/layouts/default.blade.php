@@ -1,11 +1,16 @@
 
-<!-- /**
+<!--
+Default layouts for app
+
+/**
  * Created by PhpStorm.
  * User: egor
  * Date: 21.01.16
  * Time: 13:16
  */
+
 -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,8 +48,9 @@
                 </div>
             </div>
         </section>
+<!-- end div container -->
     </div>
-
+<!-- end div Wrapper -->
 </div>
 
 <!-- JavaScripts -->

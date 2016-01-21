@@ -11,11 +11,6 @@ namespace App\Http\Controllers;
 
 class IndexController extends MainController
 {
-    public function __construct()
-    {
-        parent::__construct();
-    }
-
     public function index(){
 
        return view('pages.index', $this->data);

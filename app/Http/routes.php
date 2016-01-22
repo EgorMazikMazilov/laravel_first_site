@@ -34,6 +34,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::auth();
 
     Route::get('/', 'IndexController@index');
-
-    Route::get('/projects', 'ProjectsController@index');
+    Route::get('/projects', 'IndexController@projectList');
+    Route::get('/projects/{slug}', 'IndexController@projectView');
+    Route::get('/about/', 'IndexController@about');
 });

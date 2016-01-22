@@ -69,6 +69,9 @@ return array(
 		'users',
 		'menus',
 		'slides',
+		'projects',
+		'galleries',
+		'settings' => ['settings.about'],
 	),
 
 	/**

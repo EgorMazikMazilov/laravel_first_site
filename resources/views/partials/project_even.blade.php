@@ -1,0 +1,11 @@
+<div class="row even">
+    <div class="col-md-6 image">
+        <img src="/uploads/project/medium/{{$project -> image}}" alt="">
+    </div>
+    <div class="col-md-6 text">
+            <h2>
+                {{$project -> title}}
+            </h2>
+        <a href="/projects/{{$project->slug}}">Узнать больше</a>
+    </div>
+</div>

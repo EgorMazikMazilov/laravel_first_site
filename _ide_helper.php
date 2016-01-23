@@ -1,7 +1,7 @@
 <?php
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.2.10 on 2016-01-18.
+ * Generated for Laravel 5.2.11 on 2016-01-23.
  *
  * @author Barry vd. Heuvel <barryvdh@gmail.com>
  * @see https://github.com/barryvdh/laravel-ide-helper
@@ -1702,18 +1702,6 @@ namespace {
          */
         public static function forget($key){
             return \Illuminate\Cache\Repository::forget($key);
-        }
-        
-        /**
-         * Begin executing a new tags operation if the store supports it.
-         *
-         * @param string $name
-         * @return \Illuminate\Cache\TaggedCache 
-         * @deprecated since version 5.1. Use tags instead.
-         * @static 
-         */
-        public static function section($name){
-            return \Illuminate\Cache\Repository::section($name);
         }
         
         /**
@@ -3859,6 +3847,19 @@ namespace {
         }
         
         /**
+         * Add an "or where date" statement to the query.
+         *
+         * @param string $column
+         * @param string $operator
+         * @param int $value
+         * @return \Illuminate\Database\Query\Builder|static 
+         * @static 
+         */
+        public static function orWhereDate($column, $operator, $value){
+            return \Illuminate\Database\Query\Builder::orWhereDate($column, $operator, $value);
+        }
+        
+        /**
          * Add a "where day" statement to the query.
          *
          * @param string $column
@@ -5596,11 +5597,11 @@ namespace {
          *
          * @param string $text
          * @param mixed $callback
-         * @return int 
+         * @return void 
          * @static 
          */
         public static function raw($text, $callback){
-            return \Illuminate\Mail\Mailer::raw($text, $callback);
+            \Illuminate\Mail\Mailer::raw($text, $callback);
         }
         
         /**
@@ -5609,11 +5610,11 @@ namespace {
          * @param string $view
          * @param array $data
          * @param mixed $callback
-         * @return int 
+         * @return void 
          * @static 
          */
         public static function plain($view, $data, $callback){
-            return \Illuminate\Mail\Mailer::plain($view, $data, $callback);
+            \Illuminate\Mail\Mailer::plain($view, $data, $callback);
         }
         
         /**
@@ -5813,18 +5814,6 @@ namespace {
          */
         public static function setDefaultDriver($name){
             \Illuminate\Auth\Passwords\PasswordBrokerManager::setDefaultDriver($name);
-        }
-        
-        /**
-         * Create the user provider implementation for the driver.
-         *
-         * @param string $provider
-         * @return \Illuminate\Contracts\Auth\UserProvider 
-         * @throws \InvalidArgumentException
-         * @static 
-         */
-        public static function createUserProvider($provider){
-            return \Illuminate\Auth\Passwords\PasswordBrokerManager::createUserProvider($provider);
         }
         
     }
@@ -6356,6 +6345,17 @@ namespace {
          */
         public static function is(){
             return \Illuminate\Http\Request::is();
+        }
+        
+        /**
+         * Determine if the current request URL and query string matches a pattern.
+         *
+         * @param mixed  string
+         * @return bool 
+         * @static 
+         */
+        public static function fullUrlIs(){
+            return \Illuminate\Http\Request::fullUrlIs();
         }
         
         /**

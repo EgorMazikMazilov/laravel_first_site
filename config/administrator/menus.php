@@ -13,6 +13,7 @@ return [
         'id',
         'active',
         'title',
+        'weight',
         'position'
     ],
     'edit_fields' => [

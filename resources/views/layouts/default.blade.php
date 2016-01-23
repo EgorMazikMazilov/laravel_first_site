@@ -25,35 +25,38 @@ Default layouts for app
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel='stylesheet' type='text/css'>
 
     <!-- Styles -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
 
 </head>
 <body>
-<div class="wrapper">
+<nav class="navbar navbar-inverse >
     <div class="container">
-        <header>
-            <div class="row">
-                <div class="col-md-12">
-                    <nav>
-                        @include('components.nav')
-                    </nav>
-                </div>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Открыть меню</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
             </div>
-        </header>
-        <section>
-            <div class="row">
+        <div id="navbar" class="collapse navbar-collapse">
+            @include('components.nav')
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+<div class="container">
+                <div class="row">
                 <div class="col-md-12">
                     @yield('content')
                 </div>
             </div>
-        </section>
 <!-- end div container -->
-    </div>
-<!-- end div Wrapper -->
 </div>
 
 <!-- JavaScripts -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}

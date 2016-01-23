@@ -14,6 +14,12 @@ class Blog extends Model
 
         }
 
+    public function getBySlug($slug)
+        {
+
+            return $this -> where(['slug' => $slug]) -> firstOrFail();
+        }
+
     public function scopePublished ($query)
         {
             $query -> where(['active' => 1]);

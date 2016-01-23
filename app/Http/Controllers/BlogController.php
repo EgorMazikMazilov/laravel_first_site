@@ -22,8 +22,10 @@ class BlogController extends MainController
 
     }
 
-    public  function blogView ()
+    public  function blogView ($slug, Blog $blog)
     {
+        $this->data['record'] = $blog -> getBySlug($slug);
 
+        return view('blog.blog_view', $this->data);
     }
 }

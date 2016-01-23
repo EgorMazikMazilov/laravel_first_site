@@ -37,4 +37,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/projects', 'IndexController@projectList');
     Route::get('/projects/{slug}', 'IndexController@projectView');
     Route::get('/about/', 'IndexController@about');
+
+    Route::get('/blog/', 'BlogController@index');
+    Route::get('/blog/{slug}', 'BlogController@blogView');
 });

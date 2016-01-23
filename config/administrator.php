@@ -70,8 +70,10 @@ return array(
 		'menus',
 		'slides',
 		'projects',
+		'blogs',
 		'galleries',
 		'settings' => ['settings.about'],
+
 	),
 
 	/**

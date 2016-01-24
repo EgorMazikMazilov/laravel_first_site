@@ -35,7 +35,7 @@ return [
             'size_limit' => 5,
             'sizes' => [
                 [500, 500, 'auto', public_path().'/uploads/blog/medium/', 100],
-                [102, 76, 'auto', public_path().'/uploads/blog/small/', 100],
+                [255, 188, 'auto', public_path().'/uploads/blog/small/', 100],
 
             ],
         ],

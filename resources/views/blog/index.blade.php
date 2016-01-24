@@ -2,24 +2,45 @@
 
 @section('content')
 
-    <h1>Блог</h1>
-    @foreach($records as $item)
+<div id="header" >
+    <div class="overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 text-center" >
 
-        <div class="row">
-            <div class="col-md-2">
-                <img src="/uploads/blog/small/{{$item -> image}}">
-            </div>
-            <div class="col-md-10">
-                <h3>{{($item -> title)}}</h3>
-                <div class="content">
-                    {{mb_substr(strip_tags($item -> body), 0, 200) }}...
+                    <h1 >
+                        Что толку в глубине резкости, если не испытываешь глубоких чувств?  
+                    </h1>
+
+                    <h4> - Юджин Смит </h4>
 
                 </div>
-                <a href="/blog/{{$item -> slug}}">Читать полностью)</a>
             </div>
         </div>
+        
+    </div>
+</div>
+<div class="pad-bottom">
+    <div class="container">
+        @foreach($records as $item)
+        <div class="row">
+            <div class="col-md-12">
+                    <div class="blog-post">
+                        <img src="/uploads/blog/small/{{$item -> image}}">
+                        <h3>{{($item -> title)}}</h3>
+                        
+                            <p>
+                                {{mb_substr(strip_tags($item -> body), 0, 200) }}...
+                            </p>
+                        <h3><a href="/blog/{{$item -> slug}}" target="_blank">Читать полностью ></a></h3>
+                    </div>
 
-    @endforeach
+                </div>
+        </div>
+        @endforeach
+    </div>      
+</div>
+
 
     @include('partials.paginate', ['pageNav' => $records])
 @stop

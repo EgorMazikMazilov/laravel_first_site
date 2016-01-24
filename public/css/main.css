@@ -1,0 +1,92 @@
+body {
+   background-image: url("/uploads/background/background_1.jpg");
+
+   
+}
+.carousel-caption h3 {
+    margin: 0, auto;
+    background-color: rgba(0,0,0,0.8);
+    padding: 10px;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #FFF;
+}
+.row odd col-md-6 text{
+    background-color: rgba(255,255,255,0.8);
+}
+#header {
+    background: url("/uploads/background/background_blog.jpg") no-repeat center center;
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    min-height: 250px;
+    color: #fff;
+}
+#header .overlay {
+    background-color:rgba(0, 0, 0, 0.3);
+    min-height:250px;
+}
+    
+
+    #header h1 {
+        line-height: 60px;
+        font-size: 28px;
+        font-weight: 900;
+        padding-top:85px;
+        padding-bottom:35px;
+    }
+
+
+    #header h4 {
+        line-height: 30px;
+        font-size: 25px;
+        padding-bottom: 40px;
+    }
+/* =============================================================
+BLOG POST STYLE
+============================================================ */
+.blog-post {
+    padding-bottom:30px;
+    border-bottom:2px solid #f4f4f4;
+    padding-top:30px;
+    text-align: center;
+    margin: 10px 0;
+}
+blog-post img{
+    float: left;
+}
+.blog-post a, .blog-post a:hover {
+    text-decoration:none;
+}
+.blog-post {
+    background-color: rgba(255,255,255,0.8);
+}
+.blog-post h1 {
+    font-size:40px;
+    line-height:50px;
+}
+.blog-post h4 {
+    font-size:20px;
+    line-height:25px;
+}
+.blog-post p {
+    font-size:16px;
+    line-height:30px;
+    padding-bottom:10px;
+    padding-top:10px;
+}
+.col-md-12{
+    padding-left: 0;
+    align-content: center;
+}
+.project-post{
+    background-color: rgba(255,255,255,0.8);
+}
+.col-md-12 .project_view{
+    padding-bottom: 10px;
+}
+.thumbnail {
+    
+    background-color: rgba(255, 255, 255, 0.8);
+}

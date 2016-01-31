@@ -6,7 +6,7 @@
  * Time: 18:52
  */
 return [
-   'title' => 'Projects',
+   'title' => 'Проекты',
    'single' => 'Project',
    'model' => 'App\Project',
    'columns' => [

@@ -6,7 +6,7 @@
  * Time: 18:52
  */
 return [
-    'title' => 'Galleries',
+    'title' => 'Галерея',
     'single' => 'image',
     'model' => 'App\Gallery',
     'columns' => [

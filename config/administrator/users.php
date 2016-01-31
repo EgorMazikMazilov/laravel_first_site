@@ -7,7 +7,7 @@
  */
 return
     [
-        'title' => 'Users',
+        'title' => 'Юзверь',
         'single' => 'user',
         'model' => 'App\User',
         'columns' => [

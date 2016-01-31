@@ -6,7 +6,7 @@
  * Time: 15:14
  */
 return [
-    'title' => 'Menu',
+    'title' => 'Менюшка',
     'single' => 'item',
     'model' => 'App\Menu',
     'columns' => [

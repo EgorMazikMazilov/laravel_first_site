@@ -6,7 +6,7 @@
  * Time: 18:52
  */
 return [
-    'title' => 'Blog',
+    'title' => 'Блог',
     'single' => 'records',
     'model' => 'App\Blog',
     'columns' => [

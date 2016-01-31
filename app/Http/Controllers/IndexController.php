@@ -14,6 +14,7 @@ use App\Slider;
 
 class IndexController extends MainController
 {
+    //// метод для Слайдер
     public function index(Slider $slider){
 
         $this->data ['slides'] = $slider->getActive();
@@ -22,8 +23,8 @@ class IndexController extends MainController
        return view('pages.index', $this->data);
     }
 
-
-    public function projectList (Project $project)
+// метод для Проекты
+    public function projectList (Project $project)// инекция зависимости (получаем доступ к Project )
     {
 
         $this->data['projects'] = $project->getActive();{}
@@ -39,7 +40,7 @@ class IndexController extends MainController
         return view('pages.project_view', $this->data);
     }
 
-
+// метод для О нас без использования БД. все данные храним в json формате в соответствующем файле (куда проще сделать эту страницу статической)
     public function about()
     {
         $this->data['about'] = json_decode(file_get_contents(storage_path().'/administrator_settings/about.json'));

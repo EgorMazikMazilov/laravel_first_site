@@ -6,7 +6,7 @@
  * Time: 16:03
  */
 return [
-    'title' => 'Slides',
+    'title' => 'Слайдер',
     'single' => 'slide',
     'model' => 'App\Slider',
     'columns' => [
